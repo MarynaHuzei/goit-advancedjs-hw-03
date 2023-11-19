@@ -30,7 +30,6 @@ h1 {
   overflow: hidden;
 }
 .breed-select {
-  display: none;
   max-width: 400px;
   margin: auto;
 }
