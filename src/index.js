@@ -5,8 +5,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 import 'slim-select/styles';
 import SlimSelect from 'slim-select';
 import axios from 'axios';
-axios.defaults.headers.common['x-api-key'] =
-  'live_BmJCj1bbQvY1fEs5LpoLsVVgCc44InHNO1vjoGhmkFByGwldXWQniln4D9lplXUl';
 
 const breedSelect = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader');
