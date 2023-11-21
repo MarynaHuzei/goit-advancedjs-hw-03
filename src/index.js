@@ -13,10 +13,10 @@ const loader = document.querySelector('.loader');
 const error = document.querySelector('.error');
 const catInfo = document.querySelector('.cat-info');
 
-loader.classList.replace('loader', 'is-hidden');
+breedSelect.classList.add('is-hidden');
+loader.classList.add('is-hidden');
 error.classList.add('is-hidden');
 catInfo.classList.add('is-hidden');
-
 let arrBreedsId = [];
 
 fetchBreeds()
@@ -35,7 +35,7 @@ breedSelect.addEventListener('change', onSelectBreed);
 
 function onSelectBreed(event) {
   loader.classList.replace('is-hidden', 'loader');
-  breedSelect.classList.add('is-hidden');
+  breedSelect.classList.replace('is-hidden', 'breed-select');
   catInfo.classList.add('is-hidden');
   const breedId = event.currentTarget.value;
   fetchCatByBreed(breedId)
